@@ -6,4 +6,25 @@
 //  Copyright © 2020 Valentin Limagne. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import RxSwift
+import Alamofire
+import Action
+import SwiftLocation
+
+class HomeViewControllerViewModel {
+
+    // MARK: - Public attributes
+    
+    
+    // MARK: - Private attributes
+    
+    fileprivate var disposeBag: DisposeBag = DisposeBag()
+    
+    // MARK: - Public functions
+    
+    init() {
+        
+    }
+    
+}

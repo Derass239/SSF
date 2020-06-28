@@ -20,6 +20,15 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>SSF à besoin de votre localistaion pour définir les CT les plus proches de vous.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>SSF à besoin de votre localistaion pour définir les CT les plus proches de vous.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

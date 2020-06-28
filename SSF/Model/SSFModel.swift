@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct Ssf: Codable {
+    let id: String
+    let name: String
+    let ctds: [Ctds?]
+}
+
+struct Ctds: Codable {
+    let name: String
+    let phonePerso: String
+    let phoneWork: String
+    let phoneMobile: String
+}

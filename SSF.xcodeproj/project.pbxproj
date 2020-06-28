@@ -3,27 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C28E46FE246411F2855F51E /* Pods_SSF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DF5127884DEFCD580218E2 /* Pods_SSF.framework */; };
+		A773971324A638CB00A1C322 /* ContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773971224A638CB00A1C322 /* ContactDetailViewController.swift */; };
+		A773971524A639BE00A1C322 /* ContactDetailViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A773971424A639BE00A1C322 /* ContactDetailViewControllerViewModel.swift */; };
 		A7A8F947249CAD7700E1E9C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F946249CAD7700E1E9C3 /* AppDelegate.swift */; };
 		A7A8F949249CAD7700E1E9C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F948249CAD7700E1E9C3 /* SceneDelegate.swift */; };
-		A7A8F94B249CAD7700E1E9C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F94A249CAD7700E1E9C3 /* ViewController.swift */; };
 		A7A8F94E249CAD7700E1E9C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A8F94C249CAD7700E1E9C3 /* Main.storyboard */; };
 		A7A8F950249CAD7C00E1E9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A8F94F249CAD7C00E1E9C3 /* Assets.xcassets */; };
 		A7A8F953249CAD7C00E1E9C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7A8F951249CAD7C00E1E9C3 /* LaunchScreen.storyboard */; };
+		A7A8F95E249CAE4200E1E9C3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F95D249CAE4200E1E9C3 /* R.generated.swift */; };
+		A7A8F961249CAECA00E1E9C3 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F960249CAECA00E1E9C3 /* RequestManager.swift */; };
+		A7A8F964249CC75200E1E9C3 /* SSFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F963249CC75200E1E9C3 /* SSFModel.swift */; };
+		A7A8F968249CDC7B00E1E9C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F967249CDC7B00E1E9C3 /* HomeViewController.swift */; };
+		A7A8F96A249CDD0400E1E9C3 /* HomeViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F969249CDD0400E1E9C3 /* HomeViewControllerViewModel.swift */; };
+		A7A8F96C249CF22200E1E9C3 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F96B249CF22200E1E9C3 /* ContactViewController.swift */; };
+		A7A8F96E249CF23400E1E9C3 /* ContactViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F96D249CF23400E1E9C3 /* ContactViewControllerViewModel.swift */; };
+		A7A8F971249FE6FF00E1E9C3 /* SsfService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F970249FE6FF00E1E9C3 /* SsfService.swift */; };
+		A7A8F97324A004B100E1E9C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F97224A004B100E1E9C3 /* NetworkManager.swift */; };
+		A7A8F97624A0DABB00E1E9C3 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F97524A0DABB00E1E9C3 /* Bindable.swift */; };
+		A7A8F97824A124A700E1E9C3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F97724A124A700E1E9C3 /* LaunchViewController.swift */; };
+		A7A8F97A24A124E300E1E9C3 /* LaunchViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F97924A124E300E1E9C3 /* LaunchViewControllerViewModel.swift */; };
+		A7A8F97E24A299A300E1E9C3 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F97D24A299A300E1E9C3 /* ContactTableViewCell.swift */; };
+		A7A8F98024A2B8C100E1E9C3 /* ContactTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8F97F24A2B8C100E1E9C3 /* ContactTableViewCellViewModel.swift */; };
+		A7A8F98224A2BA2000E1E9C3 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A8F98124A2BA2000E1E9C3 /* ContactTableViewCell.xib */; };
+		A7C3D3B024A4F4FF002FE3C6 /* CLLocation+zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C3D3AF24A4F4FF002FE3C6 /* CLLocation+zip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A7A8F943249CAD7700E1E9C3 /* SSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24DF5127884DEFCD580218E2 /* Pods_SSF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEC1AC4DFB57487EB941CD7 /* Pods-SSF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSF.debug.xcconfig"; path = "Target Support Files/Pods-SSF/Pods-SSF.debug.xcconfig"; sourceTree = "<group>"; };
+		8FAF4DAD193EC32D4EB0F8DD /* Pods-SSF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSF.release.xcconfig"; path = "Target Support Files/Pods-SSF/Pods-SSF.release.xcconfig"; sourceTree = "<group>"; };
+		A773971224A638CB00A1C322 /* ContactDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewController.swift; sourceTree = "<group>"; };
+		A773971424A639BE00A1C322 /* ContactDetailViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewControllerViewModel.swift; sourceTree = "<group>"; };
+		A7A8F943249CAD7700E1E9C3 /* Spéléo Secours Français - SSF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spéléo Secours Français - SSF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A8F946249CAD7700E1E9C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7A8F948249CAD7700E1E9C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A7A8F94A249CAD7700E1E9C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A7A8F94D249CAD7700E1E9C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7A8F94F249CAD7C00E1E9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7A8F952249CAD7C00E1E9C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7A8F954249CAD7C00E1E9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A8F95D249CAE4200E1E9C3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		A7A8F960249CAECA00E1E9C3 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		A7A8F963249CC75200E1E9C3 /* SSFModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSFModel.swift; sourceTree = "<group>"; };
+		A7A8F967249CDC7B00E1E9C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A7A8F969249CDD0400E1E9C3 /* HomeViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerViewModel.swift; sourceTree = "<group>"; };
+		A7A8F96B249CF22200E1E9C3 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		A7A8F96D249CF23400E1E9C3 /* ContactViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewControllerViewModel.swift; sourceTree = "<group>"; };
+		A7A8F970249FE6FF00E1E9C3 /* SsfService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SsfService.swift; sourceTree = "<group>"; };
+		A7A8F97224A004B100E1E9C3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A7A8F97524A0DABB00E1E9C3 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		A7A8F97724A124A700E1E9C3 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		A7A8F97924A124E300E1E9C3 /* LaunchViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewControllerViewModel.swift; sourceTree = "<group>"; };
+		A7A8F97D24A299A300E1E9C3 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		A7A8F97F24A2B8C100E1E9C3 /* ContactTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		A7A8F98124A2BA2000E1E9C3 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		A7C3D3AF24A4F4FF002FE3C6 /* CLLocation+zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+zip.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +69,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C28E46FE246411F2855F51E /* Pods_SSF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		421F75F0CB1E47B6E159B2D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24DF5127884DEFCD580218E2 /* Pods_SSF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A7A8F93A249CAD7700E1E9C3 = {
 			isa = PBXGroup;
 			children = (
 				A7A8F945249CAD7700E1E9C3 /* SSF */,
 				A7A8F944249CAD7700E1E9C3 /* Products */,
+				E85DB47E7C4A8BCF41A6B017 /* Pods */,
+				421F75F0CB1E47B6E159B2D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A7A8F944249CAD7700E1E9C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7A8F943249CAD7700E1E9C3 /* SSF.app */,
+				A7A8F943249CAD7700E1E9C3 /* Spéléo Secours Français - SSF.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +105,129 @@
 		A7A8F945249CAD7700E1E9C3 /* SSF */ = {
 			isa = PBXGroup;
 			children = (
+				A7A8F95B249CAE2000E1E9C3 /* Core */,
+				A7A8F962249CC73100E1E9C3 /* Model */,
+				A7A8F965249CDC6400E1E9C3 /* View */,
+				A7A8F966249CDC6A00E1E9C3 /* ViewModel */,
 				A7A8F946249CAD7700E1E9C3 /* AppDelegate.swift */,
 				A7A8F948249CAD7700E1E9C3 /* SceneDelegate.swift */,
-				A7A8F94A249CAD7700E1E9C3 /* ViewController.swift */,
 				A7A8F94C249CAD7700E1E9C3 /* Main.storyboard */,
 				A7A8F94F249CAD7C00E1E9C3 /* Assets.xcassets */,
 				A7A8F951249CAD7C00E1E9C3 /* LaunchScreen.storyboard */,
 				A7A8F954249CAD7C00E1E9C3 /* Info.plist */,
 			);
 			path = SSF;
+			sourceTree = "<group>";
+		};
+		A7A8F95B249CAE2000E1E9C3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A7C3D3AE24A4F4CD002FE3C6 /* Extension */,
+				A7A8F97424A0DAA600E1E9C3 /* Protocol */,
+				A7A8F96F249FE6EA00E1E9C3 /* Service */,
+				A7A8F95F249CAEB800E1E9C3 /* Manager */,
+				A7A8F95C249CAE2900E1E9C3 /* Generated */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A7A8F95C249CAE2900E1E9C3 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F95D249CAE4200E1E9C3 /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		A7A8F95F249CAEB800E1E9C3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F960249CAECA00E1E9C3 /* RequestManager.swift */,
+				A7A8F97224A004B100E1E9C3 /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A7A8F962249CC73100E1E9C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F963249CC75200E1E9C3 /* SSFModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A7A8F965249CDC6400E1E9C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F97B24A2994600E1E9C3 /* Cell */,
+				A7A8F967249CDC7B00E1E9C3 /* HomeViewController.swift */,
+				A7A8F96B249CF22200E1E9C3 /* ContactViewController.swift */,
+				A7A8F97724A124A700E1E9C3 /* LaunchViewController.swift */,
+				A773971224A638CB00A1C322 /* ContactDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A7A8F966249CDC6A00E1E9C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F97C24A2994B00E1E9C3 /* Cell */,
+				A7A8F969249CDD0400E1E9C3 /* HomeViewControllerViewModel.swift */,
+				A7A8F96D249CF23400E1E9C3 /* ContactViewControllerViewModel.swift */,
+				A7A8F97924A124E300E1E9C3 /* LaunchViewControllerViewModel.swift */,
+				A773971424A639BE00A1C322 /* ContactDetailViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A7A8F96F249FE6EA00E1E9C3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F970249FE6FF00E1E9C3 /* SsfService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A7A8F97424A0DAA600E1E9C3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F97524A0DABB00E1E9C3 /* Bindable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		A7A8F97B24A2994600E1E9C3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F97D24A299A300E1E9C3 /* ContactTableViewCell.swift */,
+				A7A8F98124A2BA2000E1E9C3 /* ContactTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A7A8F97C24A2994B00E1E9C3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8F97F24A2B8C100E1E9C3 /* ContactTableViewCellViewModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A7C3D3AE24A4F4CD002FE3C6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A7C3D3AF24A4F4FF002FE3C6 /* CLLocation+zip.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E85DB47E7C4A8BCF41A6B017 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CEC1AC4DFB57487EB941CD7 /* Pods-SSF.debug.xcconfig */,
+				8FAF4DAD193EC32D4EB0F8DD /* Pods-SSF.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7A8F957249CAD7C00E1E9C3 /* Build configuration list for PBXNativeTarget "SSF" */;
 			buildPhases = (
+				D6057C3BA1EFA40685381592 /* [CP] Check Pods Manifest.lock */,
+				A7A8F95A249CADFF00E1E9C3 /* ShellScript */,
 				A7A8F93F249CAD7700E1E9C3 /* Sources */,
 				A7A8F940249CAD7700E1E9C3 /* Frameworks */,
 				A7A8F941249CAD7700E1E9C3 /* Resources */,
+				6A0556D9820883C7DF4FAC48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,7 +250,7 @@
 			);
 			name = SSF;
 			productName = SSF;
-			productReference = A7A8F943249CAD7700E1E9C3 /* SSF.app */;
+			productReference = A7A8F943249CAD7700E1E9C3 /* Spéléo Secours Français - SSF.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A8F98224A2BA2000E1E9C3 /* ContactTableViewCell.xib in Resources */,
 				A7A8F953249CAD7C00E1E9C3 /* LaunchScreen.storyboard in Resources */,
 				A7A8F950249CAD7C00E1E9C3 /* Assets.xcassets in Resources */,
 				A7A8F94E249CAD7700E1E9C3 /* Main.storyboard in Resources */,
@@ -133,14 +300,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A0556D9820883C7DF4FAC48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSF/Pods-SSF-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSF/Pods-SSF-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSF/Pods-SSF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A8F95A249CADFF00E1E9C3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/SSF/Core/Generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/SSF/Core/Generated/R.generated.swift\"\n";
+		};
+		D6057C3BA1EFA40685381592 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSF-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A7A8F93F249CAD7700E1E9C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A8F94B249CAD7700E1E9C3 /* ViewController.swift in Sources */,
+				A7A8F97824A124A700E1E9C3 /* LaunchViewController.swift in Sources */,
+				A7A8F98024A2B8C100E1E9C3 /* ContactTableViewCellViewModel.swift in Sources */,
+				A773971524A639BE00A1C322 /* ContactDetailViewControllerViewModel.swift in Sources */,
+				A7A8F96E249CF23400E1E9C3 /* ContactViewControllerViewModel.swift in Sources */,
+				A7A8F96A249CDD0400E1E9C3 /* HomeViewControllerViewModel.swift in Sources */,
+				A773971324A638CB00A1C322 /* ContactDetailViewController.swift in Sources */,
+				A7A8F97624A0DABB00E1E9C3 /* Bindable.swift in Sources */,
+				A7A8F961249CAECA00E1E9C3 /* RequestManager.swift in Sources */,
+				A7A8F964249CC75200E1E9C3 /* SSFModel.swift in Sources */,
+				A7C3D3B024A4F4FF002FE3C6 /* CLLocation+zip.swift in Sources */,
+				A7A8F97E24A299A300E1E9C3 /* ContactTableViewCell.swift in Sources */,
+				A7A8F97324A004B100E1E9C3 /* NetworkManager.swift in Sources */,
 				A7A8F947249CAD7700E1E9C3 /* AppDelegate.swift in Sources */,
+				A7A8F97A24A124E300E1E9C3 /* LaunchViewControllerViewModel.swift in Sources */,
+				A7A8F96C249CF22200E1E9C3 /* ContactViewController.swift in Sources */,
 				A7A8F949249CAD7700E1E9C3 /* SceneDelegate.swift in Sources */,
+				A7A8F968249CDC7B00E1E9C3 /* HomeViewController.swift in Sources */,
+				A7A8F971249FE6FF00E1E9C3 /* SsfService.swift in Sources */,
+				A7A8F95E249CAE4200E1E9C3 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,17 +526,19 @@
 		};
 		A7A8F958249CAD7C00E1E9C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEC1AC4DFB57487EB941CD7 /* Pods-SSF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FT3D266XN7;
 				INFOPLIST_FILE = SSF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.valentinLimagne.SSF;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Spéléo Secours Français - SSF";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,17 +546,19 @@
 		};
 		A7A8F959249CAD7C00E1E9C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FAF4DAD193EC32D4EB0F8DD /* Pods-SSF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FT3D266XN7;
 				INFOPLIST_FILE = SSF/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.valentinLimagne.SSF;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Spéléo Secours Français - SSF";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

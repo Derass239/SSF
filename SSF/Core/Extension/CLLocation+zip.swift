@@ -6,4 +6,10 @@
 //  Copyright © 2020 Valentin Limagne. All rights reserved.
 //
 
-import Foundation
+import MapKit
+
+extension CLLocation {
+    func fetchZip(completion: @escaping (_ zip: String?, _ error: Error?) -> ()) {
+        CLGeocoder().reverseGeocodeLocation(self) { completion($0?.first?.postalCode, $1) }
+    }
+}

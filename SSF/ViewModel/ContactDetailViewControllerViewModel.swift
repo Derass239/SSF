@@ -23,7 +23,7 @@ class ContactDetailViewControllerViewModel {
     // MARK: - Private attributes
     
     fileprivate var disposeBag: DisposeBag = DisposeBag()
-    fileprivate var item: [Ssf] = []
+    fileprivate var item: Ssf?
     
     // MARK: - Public functions
     
@@ -31,10 +31,29 @@ class ContactDetailViewControllerViewModel {
         //reloadData.onNext(())
     }
     
-    init() {
-        //setupTableView()
-        //setupSearchTerm()
+    func updateWith(ssf: Ssf) {
+        self.item = ssf
+        
+        
     }
     
+    init() {
+        setupTableView()
+    }
+    
+    
+    fileprivate func setupTableView() {
+        guard let safeCtdsList = item?.ctds else { return }
+        
+        self.itemsCellsViewModels = safeCtdsList.map({ (item) ->
+         ContactTableViewCellViewModel in
+            guard let safeCtds = item else { fatalError() }
+            
+            let viewModel = ContactTableViewCellViewModel()
+            viewModel.updateWith(ctds: safeCtds)
+            
+            return viewModel
+        })
+    }
     
 }
