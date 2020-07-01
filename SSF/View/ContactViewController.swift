@@ -110,9 +110,7 @@ extension ContactViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let contactDetailVC =  R.storyboard.main().instantiateViewController(withIdentifier: "ContactDetailViewController") as! ContactDetailViewController
-        contactDetailVC.modalPresentationStyle = .fullScreen
-        
-       // contactDetailVC.viewModel.updateWith(ssf: SsfService.shared.ssfList[indexPath.row])
+        contactDetailVC.ssf = viewModel.itemsCellsViewModels[indexPath.row].ssf
 
         self.present(contactDetailVC, animated: true)
     }

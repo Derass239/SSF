@@ -14,7 +14,9 @@ import Action
 class ContactDetailViewControllerViewModel {
     
     // MARK: - Public attributes
-    
+     
+    var title: BehaviorRelay<String> = BehaviorRelay(value: "")
+    let reloadData: PublishSubject<Void> = PublishSubject()
     var itemsCellsViewModels: [ContactTableViewCellViewModel] = []
     var numberOfItems: Int {
         return itemsCellsViewModels.count
@@ -27,23 +29,23 @@ class ContactDetailViewControllerViewModel {
     
     // MARK: - Public functions
     
-    func refresh() {
-        //reloadData.onNext(())
-    }
+    init() { }
     
     func updateWith(ssf: Ssf) {
         self.item = ssf
-        
-        
-    }
-    
-    init() {
+        setupTitle()
         setupTableView()
     }
     
+    fileprivate func setupTitle() {
+        title.accept(item!.name)
+    }
+    
+    // MARK: - Private functions
     
     fileprivate func setupTableView() {
-        guard let safeCtdsList = item?.ctds else { return }
+        guard var safeCtdsList = item?.ctds else { return }
+        safeCtdsList.append(Ctds(name: "Numéro Vert National", phonePerso: "+33 0800 121 123", phoneWork: "", phoneMobile: ""))
         
         self.itemsCellsViewModels = safeCtdsList.map({ (item) ->
          ContactTableViewCellViewModel in

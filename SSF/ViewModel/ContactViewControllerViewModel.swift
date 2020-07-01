@@ -21,17 +21,6 @@ class ContactViewControllerViewModel {
     var numberOfItems: Int {
         return itemsCellsViewModels.count
     }
-    lazy var showContactDetailsAction = Action<Int, Void> {[weak self] index in
-        guard let safeSelf = self,
-        safeSelf.numberOfItems > index,
-            let cdts = safeSelf.itemsCellsViewModels[index].ctds else { return
-                Observable.empty()
-        }
-        
-        
-        
-        return Observable.empty()
-    }
     
     // MARK: - Private attributes
     

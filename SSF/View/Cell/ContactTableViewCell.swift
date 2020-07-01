@@ -30,8 +30,16 @@ class ContactTableViewCell: UITableViewCell, Bindable {
      // MARK: - Private functions
     
     fileprivate func setupTitleLabel() {
-        viewModel.title.asObservable()
-            .bind(to: titleLabel.rx.text)
-            .disposed(by: disposeBag)
+        
+        viewModel.title.subscribe(onNext: { title in
+            if title.contains("Numéro Vert National") {
+                self.titleLabel.textColor = UIColor(red: 0.00, green: 0.55, blue: 0.01, alpha: 1.00)
+            }
+            
+            self.titleLabel.text = title
+        }).disposed(by: disposeBag)
+        
+       
+        
     }
 }
